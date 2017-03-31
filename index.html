@@ -1,5 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<title>page</title>
-这是内容
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>tonygao的博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <style>
+    body{
+      padding:16px;
+    }
+    img{
+      max-width:100%;
+    }
+  </style>
+</head>
+<body>
+    <div id="content">
+# 我的第一篇博客
+
+**Tony**
+
+> no pains, no gains.
+
+大家好，我是tony，很开心认识大家。
+
+<img src="https://imgsa.baidu.com/baike/c0%3Dbaike272%2C5%2C5%2C272%2C90/sign=5da13261cacec3fd9f33af27b7e1bf5a/7a899e510fb30f24a61423aec195d143ac4b0395.jpg">
+    </div>  
+    <script>
+      var content = document.querySelector('#content');
+      var markdown = content.innerHTML;
+      var html = marked(markdown);
+      content.innerHTML = html;
+    </script>
+</body>
 </html>
